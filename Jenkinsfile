@@ -1,6 +1,6 @@
 pipeline {
 	agent {
-		label 'Windows2019'
+		label 'Built-In Node'
 	}
 
 	options {
