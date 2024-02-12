@@ -17,6 +17,8 @@
 #include "FGLocomotive.h"
 #include "Buildables/FGBuildableRailroadStation.h"
 #include "FINStaticReflectionSourceHooks.generated.h"
+#include "FGDroneVehicle.h"
+#include "Buildables/FGBuildableDroneStation.h"
 
 UCLASS()
 class FICSITNETWORKS_API UFINStaticReflectionHook : public UFINHook {
@@ -506,4 +508,15 @@ public:
 		//SUBSCRIBE_METHOD_MANUAL("?TickCircuit@UFGPowerCircuit@@MEAAXM@Z", TickCircuitHook_Decl, &TickCircuitHook);
 		//SUBSCRIBE_METHOD(UFGPowerCircuit::TickCircuit, &TickCircuitHook);
     }
+};
+
+UCLASS()
+class UFINDroneStationHook : public UFINStaticReflectionHook {
+	GENERATED_BODY()
+
+protected:
+
+private:
+
+public:
 };
